@@ -276,7 +276,7 @@ test('Filtrado de un producto de una categoria no exitente, debe no encontrarlo 
     expect(filtrarProductos(productos, 'vaqueros')).toEqual([]);
 });
 
-test("Filtrar productos con categoria en mayusculas o minusculas con mayusculas debe lanzar error", () => {
+test("Filtrar productos con categoria en mayusculas o minusculas con mayusculas debe devolver vacio", () => {
     expect(filtrarProductos(productos, 'CAMPERAS')).toEqual([]);
     expect(filtrarProductos(productos, 'CaMpeRas')).toEqual([]);
 });
